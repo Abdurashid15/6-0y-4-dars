@@ -1,0 +1,68 @@
+.navbar {
+    background-color: #5361E4;
+    width: 1440px;
+    height: 80px;
+    display: flex;
+    align-items: center;
+    margin: 0px auto;
+    padding: 0px 150px;
+}
+
+.logo {
+    width: 74.42px;
+    height: 30.55px;
+}
+
+li {
+    display: flex;
+    text-decoration: none;
+}
+
+a {
+    text-decoration: none;
+    display: flex;
+    font-family: sans-serif;
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 22.77px;
+    text-align: left;
+    color: #FFFFFF;
+    cursor: pointer;
+}
+
+.links {
+    display: flex;
+    gap: 48px;
+    padding-left: 107.58px;
+}
+
+.select {
+    outline: none;
+    border: none;
+    background-color: transparent;
+    margin-left: 108px;
+    color: #FFFFFF;
+    font-family: sans-serif;
+    font-size: 18px;
+    font-weight: 500;
+}
+
+.select option {
+    background-color: #5361E4;
+}
+
+.btn {
+    cursor: pointer;
+    color: #5361E4;
+    font-family: sans-serif;
+    font-size: 16px;
+    font-weight: 500;
+    padding:13px 24px;
+    border-radius: 12px;
+    border: #FFFFFF;
+    margin-left: 38px;
+}
+.btn:active{
+    transform: scale(0.9);
+    opacity: 0.9;
+}
