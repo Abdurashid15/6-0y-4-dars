@@ -65,7 +65,7 @@ function Form() {
             <span className={styles.closebutton} onClick={closeModal}>
               &times;
             </span>
-            <input  type="file" onChange={handleFileUpload} />
+            <input className={styles.modalinput} type="file" onChange={handleFileUpload} />
           </div>
         </div>
       )}

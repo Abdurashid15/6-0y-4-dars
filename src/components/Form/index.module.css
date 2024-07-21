@@ -6,7 +6,12 @@
     background-color: rgb(236, 227, 227);
     margin: 60px auto;
 }
-
+.modalcontent{
+    width: 500px;
+}
+.modalinput{
+    width: 200px;
+}
 .modal {
     display: block;
     position: fixed;
