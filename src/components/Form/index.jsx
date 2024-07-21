@@ -39,6 +39,11 @@ function Form() {
       setProfilePicture(URL.createObjectURL(file));
       closeModal();
     };
+    const [phoneNumber, setPhoneNumber] = useState('+998');
+
+    const handlePhoneNumberChange = (event) => {
+      setPhoneNumber(event.target.value);
+    };
   return (
     <>
     <div className={styles.form}>
@@ -67,15 +72,15 @@ function Form() {
 
 
     </div>
-    <form onSubmit={handleSubmit}>
+    <form className={styles.inputs} onSubmit={handleSubmit}>
       <label htmlFor="Kompaniya-nomi">Kompaniya nomi:</label>
       <input
         type="text"
         id="Kompaniya-nomi"
         name="Kompaniya-nomi"
-        value={formData.KompaniyaNomi}
+        value={formData.Kompaniyaтomi}
         onChange={handleInputChange}
-        required
+        required placeholder='Kompaniya nomi'
       />
 
       <label htmlFor="email">Email:</label>
@@ -85,18 +90,18 @@ function Form() {
         name="email"
         value={formData.email}
         onChange={handleInputChange}
-        required
+        required placeholder='Email'
       />
 
       <label htmlFor="phone">Telefon raqami:</label>
       <input
-        type="tel"
-        id="Telefon"
-        name="Telefon"
-        value={formData.Telefon}
-        onChange={handleInputChange}
-        required
-      />
+      type='number'
+      mask="+998 99 999 99 99"
+      value={phoneNumber}
+      onChange={handlePhoneNumberChange}
+      placeholder="+998 __ ___ __ __"
+      alwaysShowMask
+    />
 
       <label htmlFor="country">Davlat:</label>
       <input
@@ -105,7 +110,7 @@ function Form() {
         name="Davlat"
         value={formData.Davlat}
         onChange={handleInputChange}
-        required
+        required placeholder='Davlat'
       />
 
       <label htmlFor="city">Shahar:</label>
@@ -115,7 +120,7 @@ function Form() {
         name="Shahar"
         value={formData.Shahar}
         onChange={handleInputChange}
-        required
+        required placeholder='Shahar'
       />
 
       <label htmlFor="joyi">Yashash joyi:</label>
@@ -125,7 +130,7 @@ function Form() {
         name="joyi"
         value={formData.joyi}
         onChange={handleInputChange}
-        required
+        required placeholder='Yashash joyi'
       />
 
       <label htmlFor="Hodimlar">Hodimlar soni:</label>
@@ -135,7 +140,7 @@ function Form() {
         name="Hodimlar"
         value={formData.Hodimlar}
         onChange={handleInputChange}
-        required
+        required placeholder='Hodimlar soni'
       />
 
       <label htmlFor="Izoh">Izoh:</label>
@@ -143,10 +148,10 @@ function Form() {
         id="Izoh"
         name="Izoh"
         value={formData.Izoh}
-        onChange={handleInputChange}
+        onChange={handleInputChange} placeholder='Kopaniya haqida izoh qoldiring'
       />
 
-      <button type="Keyingi">Keyingi</button>
+      <button className={styles.keyingi} type="Keyingi">Keyingi</button>
     </form>
     </div>
     </>

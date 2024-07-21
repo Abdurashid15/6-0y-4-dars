@@ -52,9 +52,50 @@
     font-weight: 500;
     color: #5361E4;
 }
-.picture{
+
+.picture {
     display: flex;
     gap: 14px;
     align-items: center;
     padding-top: 32px;
+}
+
+.inputs {
+    display: flex;
+    flex-direction: column;
+    width: 702px;
+    padding: 0;
+    gap: 20px;
+}
+
+input {
+    width: 702px;
+    height: 56px;
+    padding: 18px;
+    gap: 10px;
+    border-radius: 16px;
+    border: 1px solid #E3E3E3;
+    outline: none;
+}
+
+textarea {
+    width: 702px;
+    height: 148px;
+    outline: none;
+    padding: 18px;
+    border-radius: 16px;
+    border: 1px solid #E3E3E3;
+
+}
+
+.keyingi {
+    padding: 20px 43px;
+    font-size: 16px;
+    font-weight: 500;
+    width: 173px;
+    border-radius: 16px;
+    background-color: #5361E4;
+    color: #ffffff;
+    border: none;
+    margin: 40px  0px 0px auto ;
 }
